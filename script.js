@@ -1,14 +1,54 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ===== Hamburger Menu Logic =====
+    // ===== EDIT AREA: Ubah teks yang akan diketik di sini =====
+    const rolesToType = [
+        "Mobile Developer",
+        "Network Enthusiast",
+        "Tech Explorer",
+        "Problem Solver"
+    ];
+    // ===== AKHIR EDIT AREA =====
+
+    // --- Logic untuk Typing Effect ---
+    const typingElement = document.getElementById('typing-effect');
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentRole = rolesToType[roleIndex];
+        if (isDeleting) {
+            typingElement.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingElement.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 100 : 200;
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            typeSpeed = 2000; // Jeda setelah selesai mengetik
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % rolesToType.length;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+    if (typingElement) {
+        type();
+    }
+
+
+    // --- Logic untuk Hamburger Menu ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
-
-    // Menutup menu jika salah satu link diklik (untuk navigasi di halaman yang sama)
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             if (navLinks.classList.contains('active')) {
@@ -17,26 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== Scroll Animation Logic =====
+    // --- Logic untuk Animasi Scroll ---
     const sections = document.querySelectorAll('.content-section');
-
-    const observerOptions = {
-        root: null, // default: viewport
-        rootMargin: '0px',
-        threshold: 0.1 // 10% dari elemen harus terlihat
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Animasi hanya sekali
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
     sections.forEach(section => {
         observer.observe(section);
     });
-
 });

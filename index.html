@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oktavianus Samuel Minarto | Portfolio</title>
+    <title>Oktavianus Samuel Minarto | Developer Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
 
     <header class="navbar">
         <div class="container">
-            <a href="#" class="logo">Oktavianus S.M.</a>
+            <a href="#" class="logo">OSM.</a>
             <nav class="nav-links">
-                <a href="#about">Tentang Saya</a>
+                <a href="#about">Tentang</a>
                 <a href="#projects">Proyek</a>
                 <a href="#experience">Pengalaman</a>
                 <a href="#contact">Kontak</a>
@@ -33,97 +35,115 @@
             <div class="container">
                 <img src="https://via.placeholder.com/150" alt="Foto Profil Oktavianus Samuel" class="profile-picture">
                 <h4>HI, SAYA OKTAVIANUS!</h4>
-                <h1>Informatics Engineer with a Passion for Mobile & Networking</h1>
-                <p class="subtitle">Mahasiswa Teknik Informatika di Universitas Brawijaya dengan minat pada pengembangan mobile, jaringan komputer, dan keamanan.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Lihat Proyek Saya</a>
-                    <a href="https://www.linkedin.com/in/oktavianussamuel/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                <h1>Saya seorang <span id="typing-effect"></span></h1>
+                 <p class="subtitle">Mahasiswa Teknik Informatika Universitas Brawijaya dengan antusiasme tinggi dalam membangun aplikasi mobile yang fungsional dan menjelajahi dunia jaringan komputer.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
 
         <section id="about" class="content-section">
             <div class="container">
-                <h2>Tentang Saya</h2>
+                <h2><i class="fas fa-user-circle"></i> Tentang Saya</h2>
                 <p>
-                    [cite_start]Saya adalah seorang mahasiswa Teknik Informatika di Universitas Brawijaya [cite: 2] [cite_start]yang saat ini mendalami pengembangan aplikasi mobile menggunakan Kotlin dan Android Studio[cite: 6, 7]. [cite_start]Di sisi lain, saya juga terus memperkuat fondasi teknis saya di bidang jaringan, cloud, dan keamanan[cite: 7]. Saya sangat antusias untuk belajar, berkolaborasi, dan berkontribusi dalam proyek-proyek yang menantang.
+                    Sebagai mahasiswa Teknik Informatika, saya menemukan passion saya di persimpangan antara rekayasa perangkat lunak dan infrastruktur jaringan. Saya menikmati proses mengubah ide menjadi aplikasi nyata menggunakan Kotlin dan Android Studio, sambil terus memperdalam pengetahuan tentang bagaimana data bergerak dan diamankan di seluruh jaringan. Saya percaya bahwa pemahaman yang kuat di kedua bidang ini adalah kunci untuk menciptakan solusi teknologi yang tangguh dan efisien.
                 </p>
             </div>
         </section>
-
-        <section id="projects" class="content-section bg-light">
+        
+        <section id="skills" class="content-section bg-dark">
             <div class="container">
-                <h2>Proyek Unggulan</h2>
+                <h2><i class="fas fa-code"></i> Tools & Skillset</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-kotlin"></i><span>Kotlin</span></div>
+                    <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="fas fa-robot"></i><span>Android Studio</span></div>
+                    <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+                    <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="skill-item"><i class="fas fa-cloud"></i><span>Google Cloud</span></div>
+                    <div class="skill-item"><i class="fas fa-project-diagram"></i><span>Notion</span></div>
+                    <div class="skill-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2><i class="fas fa-lightbulb"></i> Proyek Unggulan</h2>
                 <div class="project-grid">
                     <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/555/fff?text=Project+1');"></div>
                         <div class="project-content">
                             <h3>Web Scrapper Otomatis</h3>
-                            [cite_start]<p>Script Python dengan Selenium untuk mengotomatisasi verifikasi data peserta pada sistem pengumuman berbasis web, lengkap dengan penyimpanan hasil dan penanganan error. [cite: 31, 32, 33, 37, 38]</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>Selenium</span>
+                            <p>Script Python & Selenium untuk otomatisasi verifikasi data peserta, lengkap dengan penyimpanan hasil.</p>
+                            <div class="project-tags"><span>Python</span><span>Selenium</span></div>
+                            <div class="project-links">
+                                <a href="#" target="_blank">Source Code <i class="fab fa-github"></i></a>
                             </div>
-                            <a href="#" class="project-link">Lihat di GitHub &rarr;</a>
                         </div>
                     </div>
+                    
                     <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/555/fff?text=Project+2');"></div>
                         <div class="project-content">
                             <h3>Aplikasi Mobile "MUEL"</h3>
-                            [cite_start]<p>Aplikasi mobile pertama saya menggunakan Kotlin, Google Cloud Console, dan Firebase untuk monitoring emosi dan gaya hidup. [cite: 47, 49, 50, 51]</p>
-                             <div class="project-tags">
-                                <span>Kotlin</span>
-                                <span>Android Studio</span>
-                                <span>Firebase</span>
+                            <p>Aplikasi monitoring emosi dan gaya hidup menggunakan Kotlin, Google Cloud Console, dan Firebase.</p>
+                            <div class="project-tags"><span>Kotlin</span><span>Firebase</span><span>GCP</span></div>
+                             <div class="project-links">
+                                <a href="#" target="_blank">Lihat Detail &rarr;</a>
                             </div>
-                            <a href="#" class="project-link">Detail Proyek &rarr;</a>
                         </div>
                     </div>
+                    
                     <div class="project-card">
+                         <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/555/fff?text=Project+3');"></div>
                         <div class="project-content">
-                            <h3>Sistem Produktivitas & Kolaborasi</h3>
-                            [cite_start]<p>Membangun dan mengelola shared workspace di Notion untuk manajemen tugas, deadline, dan jadwal bersama partner belajar, menggunakan linked databases dan kalender. [cite: 132, 133, 134]</p>
-                            <div class="project-tags">
-                                <span>Notion</span>
-                                <span>Manajemen Proyek</span>
+                            <h3>Sistem Produktivitas Notion</h3>
+                            <p>Membangun shared workspace di Notion untuk manajemen tugas dan kolaborasi tim.</p>
+                            <div class="project-tags"><span>Notion</span><span>Manajemen Proyek</span></div>
+                             <div class="project-links">
+                                <a href="#" target="_blank">Lihat Studi Kasus &rarr;</a>
                             </div>
-                            <a href="#" class="project-link">Lihat Studi Kasus &rarr;</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
         
-        <section id="experience" class="content-section">
+        <section id="experience" class="content-section bg-dark">
             <div class="container">
-                <h2>Pengalaman</h2>
+                <h2><i class="fas fa-briefcase"></i> Pengalaman</h2>
                  <div class="experience-item">
                     <h3>Project Leader - Camp Daniel</h3>
-                    [cite_start]<p>Memimpin tim 30+ staf di 6 divisi untuk menyelenggarakan acara camp offline 3 hari 2 malam bagi 50+ peserta baru. [cite: 206] [cite_start]Membuat dan mengelola dasbor Google Sheets terpusat untuk melacak tugas, deadline, dan anggaran. [cite: 207]</p>
+                    <p>Memimpin 30+ staf di 6 divisi untuk menyelenggarakan camp bagi 50+ peserta. Mengelola alur kerja dan anggaran menggunakan dasbor Google Sheets terpusat.</p>
                 </div>
                  <div class="experience-item">
                     <h3>Media Partner Affairs - BCC FILKOM UB</h3>
-                    [cite_start]<p>Bertindak sebagai komunikator utama untuk pertanyaan kolaborasi media, memfilter dan meneruskan permintaan ke tim internal, serta mengelola tracker di Google Sheets. [cite: 253, 255, 256]</p>
+                    <p>Menjadi garda terdepan komunikasi untuk kolaborasi media, menyederhanakan alur permintaan, dan meningkatkan waktu respons menggunakan template dan tracker.</p>
                 </div>
                  <div class="experience-item">
                     <h3>Disability Support</h3>
-                    [cite_start]<p>Memberikan dukungan akademik real-time dengan mentranskripsikan ucapan dosen selama kelas untuk membantu mahasiswa difabel. [cite: 138, 139]</p>
+                    <p>Memberikan dukungan akademik real-time dengan mentranskripsikan ucapan dosen selama kelas untuk memastikan aksesibilitas pendidikan bagi mahasiswa difabel.</p>
                 </div>
             </div>
         </section>
 
-
-        <section id="contact" class="content-section bg-light">
-            <div class="container">
-                <h2>Hubungi Saya</h2>
-                <p>Tertarik untuk berkolaborasi atau sekadar ngobrol? Jangan ragu untuk menghubungi saya!</p>
-                <a href="mailto:emailkamu@example.com" class="btn btn-primary">Kirim Email</a>
+        <section id="contact" class="content-section">
+            <div class="container contact-container">
+                <h2><i class="fas fa-paper-plane"></i> Mari Terhubung!</h2>
+                <p>Punya ide menarik atau ingin berkolaborasi? Saya akan sangat senang mendengarnya dari Anda.</p>
+                <a href="mailto:emailkamu@example.com" class="btn">Kirim Pesan <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Oktavianus Samuel Minarto. Dibuat dengan semangat!</p>
+            <p>&copy; 2025 Oktavianus Samuel Minarto. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
         </div>
     </footer>
 
