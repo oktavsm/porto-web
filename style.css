@@ -59,6 +59,17 @@ a:hover { color: var(--primary-color-end); }
 .skill-item { background: var(--bg-color); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.3s, box-shadow 0.3s; }
 .skill-item:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
 .skill-item i { font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color-start); }
+.skill-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color-start);
+}
+.skill-item svg {
+    width: 3rem; /* Samakan ukurannya dengan font-size ikon lain */
+    height: 3rem;
+    margin-bottom: 1rem;
+    fill: var(--primary-color-start); /* 'fill' itu seperti 'color' untuk SVG */
+}
 .skill-item span { display: block; font-weight: 600; }
 
 /* ===== PROJECT GRID ===== */
