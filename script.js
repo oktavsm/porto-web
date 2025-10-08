@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== EDIT AREA: Ubah teks yang akan diketik di sini =====
     const rolesToType = [
-        "Mobile Developer",
-        "Network Enthusiast",
+        "Informatics Student",
+        "IT Enthusiast",
         "Tech Explorer",
         "Problem Solver"
     ];
