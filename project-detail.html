@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek - MUEL | Oktavianus Samuel</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#111827',
+                        darkSecondary: '#1F2937',
+                        primaryStart: '#3B82F6',
+                        primaryEnd: '#8B5CF6',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="font-poppins text-gray-100 bg-darkBg overflow-x-hidden">
+
+    <!-- ANIMATED BACKGROUND -->
+    <div class="bg-animation-container">
+        <ul class="bg-orbs">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- NAVBAR (Khusus untuk detail page, link kembali ke beranda) -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top backdrop-blur-md bg-darkBg/90 shadow-md">
+        <div class="container">
+            <a class="navbar-brand font-bold text-2xl text-white tracking-widest" href="index.html">OSM.</a>
+            <div class="ms-auto text-center" id="navbarNavDetail">
+                <a class="nav-link text-primaryStart hover:text-white transition-colors font-semibold py-2 px-4 rounded-full border border-primaryStart hover:bg-primaryStart"
+                    href="index.html">
+                    <i class="fas fa-arrow-left mr-2"></i> Kembali ke Beranda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-[100px] min-h-screen">
+
+        <!-- HEADER PROYEK -->
+        <header class="py-[60px] text-center border-b border-gray-800">
+            <div class="container">
+                <span class="badge bg-primaryStart text-white px-3 py-2 rounded-full mb-3 text-sm">Mobile
+                    Development</span>
+                <h1 class="display-4 fw-bold text-white mb-4">Aplikasi Mobile "MUEL"</h1>
+                <p class="lead text-gray-400 max-w-3xl mx-auto">
+                    Aplikasi cerdas untuk membantu pengguna melakukan monitoring emosi dan memandu gaya hidup sehat
+                    secara personal.
+                </p>
+                <div class="mt-6 flex justify-center gap-4 text-3xl">
+                    <i class="fab fa-android text-green-500 hover:-translate-y-1 transition-transform"
+                        title="Android"></i>
+                    <i class="fab fa-google text-blue-400 hover:-translate-y-1 transition-transform"
+                        title="Google Cloud"></i>
+                    <i class="fas fa-fire text-yellow-500 hover:-translate-y-1 transition-transform"
+                        title="Firebase"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- KONTEN DETAIL PROYEK -->
+        <section class="py-[60px]">
+            <div class="container">
+                <div class="row align-items-center g-5 mb-12 content-section">
+                    <div class="col-lg-6">
+                        <img src="muel.jpg" alt="Screenshot MUEL App"
+                            class="img-fluid rounded-2xl shadow-2xl border border-gray-700 hover:scale-[1.02] transition-transform duration-500 w-100 object-cover"
+                            style="max-height: 500px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-3xl font-bold mb-4 text-white">Latar Belakang Proyek</h2>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
+                            Kesehatan mental dan emosional adalah kunci kesejahteraan sehari-hari. Proyek "MUEL" lahir
+                            dari kebutuhan antarmuka interaktif yang dapat memetakan perasaan harian seseorang sekaligus
+                            menyarankan perubahan kecil pada rutinitas mereka.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6 text-justify">
+                            Fokus utama dari aplikasi ini adalah memberikan <i>user experience</i> yang bersih,
+                            menyenangkan (friendly), namun juga memiliki <i>backend logic</i> yang kokoh untuk memproses
+                            dan menyimpan <i>log</i> emosi pengguna dengan aman.
+                        </p>
+
+                        <div class="bg-darkSecondary p-4 rounded-xl border border-gray-700">
+                            <h4 class="font-bold text-primaryStart mb-3 text-lg">Teknologi yang Digunakan:</h4>
+                            <ul class="list-unstyled mb-0 m-0">
+                                <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <strong>Bahasa:</strong> Kotlin
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <strong>Database:</strong> Firebase Realtime DB / Firestore
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <strong>Infrastruktur:</strong> Google Cloud Console (GCP)
+                                </li>
+                                <li><i class="fas fa-check-circle text-green-400 mr-2"></i> <strong>IDE:</strong>
+                                    Android Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-[80px] content-section">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="text-3xl font-bold mb-5 text-white">Fitur Utama</h2>
+
+                        <!-- Bootstrap Grid for Features -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div
+                                    class="card bg-darkBg border border-gray-700 h-100 rounded-xl p-4 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-shadow">
+                                    <i class="fas fa-smile-beam text-4xl text-primaryStart mb-4"></i>
+                                    <h5 class="text-xl font-bold text-white mb-3">Perekam Emosi</h5>
+                                    <p class="text-gray-400 text-sm">Log harian yang interaktif untuk mencatat keadaan
+                                        mood dan faktor penyebabnya.</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card bg-darkBg border border-gray-700 h-100 rounded-xl p-4 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-shadow">
+                                    <i class="fas fa-chart-line text-4xl text-primaryStart mb-4"></i>
+                                    <h5 class="text-xl font-bold text-white mb-3">Dasbor Analitik</h5>
+                                    <p class="text-gray-400 text-sm">Visualisasi data dalam bentuk grafik, melihat pola
+                                        perasaan dari waktu ke waktu.</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card bg-darkBg border border-gray-700 h-100 rounded-xl p-4 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-shadow">
+                                    <i class="fas fa-cloud-upload-alt text-4xl text-primaryStart mb-4"></i>
+                                    <h5 class="text-xl font-bold text-white mb-3">Sinkronisasi Cloud</h5>
+                                    <p class="text-gray-400 text-sm">Integrasi cerdas mem-backup data ke Firebase &
+                                        layanan Google Cloud untuk akses multi-perangkat.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-[60px]">
+                            <a href="https://github.com/oktavsm/muel-app" target="_blank"
+                                class="inline-block bg-gradient-to-r from-primaryStart to-primaryEnd text-white font-bold py-3 px-8 rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300 text-decoration-none">
+                                <i class="fab fa-github mr-2"></i> Lihat Repositori Kode
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-darkSecondary border-t border-gray-700 py-6 text-center text-gray-400">
+        <div class="container">
+            <p class="mb-0">Halaman Detail Proyek untuk Tugas Web &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Custom Script (Untuk Intersection Observer di halaman detail) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animasi Scroll (Re-used for Detail Page)
+            const sections = document.querySelectorAll('.content-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>

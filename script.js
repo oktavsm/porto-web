@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== EDIT AREA: Ubah teks yang akan diketik di sini =====
     const rolesToType = [
         "Informatics Student",
-        "Competitive Programming Enthusiast",
-        "Tech Explorer",
-        "Problem Solver"
+        "Mobile Developer",
+        "Cloud & Distributed Systems Enthusiast",
+        "Competitive Programmer"
     ];
     // ===== AKHIR EDIT AREA =====
 
@@ -42,17 +42,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    // --- Logic untuk Hamburger Menu ---
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    // --- Logic untuk Menutup Otomatis Navbar Mobile (Bootstrap) setelah di-klik ---
+    const navLinksList = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    navLinksList.forEach(link => {
         link.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
+            if (navbarCollapse.classList.contains('show')) {
+                // Gunakan instansiasi Bootstrap Collapse untuk menutup secara programatis
+                let bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
             }
         });
     });
