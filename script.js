@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ===== EDIT AREA: Ubah teks yang akan diketik di sini =====
+    // Typing Effect configuration
     const rolesToType = [
         "Informatics Student",
         "Mobile Developer",
         "Cloud & Distributed Systems Enthusiast",
         "Competitive Programmer"
     ];
-    // ===== AKHIR EDIT AREA =====
 
-    // --- Logic untuk Typing Effect ---
+    // Typing Effect Logic
     const typingElement = document.getElementById('typing-effect');
     let roleIndex = 0;
     let charIndex = 0;
@@ -42,14 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    // --- Logic untuk Menutup Otomatis Navbar Mobile (Bootstrap) setelah di-klik ---
+    // Mobile Navbar Auto-collapse
     const navLinksList = document.querySelectorAll('.navbar-nav .nav-link');
     const navbarCollapse = document.getElementById('navbarNav');
 
     navLinksList.forEach(link => {
         link.addEventListener('click', () => {
             if (navbarCollapse.classList.contains('show')) {
-                // Gunakan instansiasi Bootstrap Collapse untuk menutup secara programatis
+                // Programmatically hide the Bootstrap collapse
                 let bsCollapse = new bootstrap.Collapse(navbarCollapse, {
                     toggle: false
                 });
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- Logic untuk Animasi Scroll ---
+    // Scroll Animation Observer (IntersectionObserver)
     const sections = document.querySelectorAll('.content-section');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

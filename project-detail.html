@@ -58,7 +58,7 @@
         </ul>
     </div>
 
-    <!-- NAVBAR (Khusus untuk detail page, link kembali ke beranda) -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top backdrop-blur-md bg-darkBg/90 shadow-md">
         <div class="container">
             <a class="navbar-brand font-bold text-2xl text-white tracking-widest" href="index.html">OSM.</a>
@@ -73,7 +73,7 @@
 
     <main class="pt-[100px] min-h-screen">
 
-        <!-- HEADER PROYEK -->
+        <!-- Header Proyek -->
         <header class="py-[60px] text-center border-b border-gray-800">
             <div class="container">
                 <span class="badge bg-primaryStart text-white px-3 py-2 rounded-full mb-3 text-sm">Mobile
@@ -94,12 +94,12 @@
             </div>
         </header>
 
-        <!-- KONTEN DETAIL PROYEK -->
+        <!-- Kontent Detail Proyek -->
         <section class="py-[60px]">
             <div class="container">
                 <div class="row align-items-center g-5 mb-12 content-section">
                     <div class="col-lg-6">
-                        <img src="muel.jpg" alt="Screenshot MUEL App"
+                        <img src="assets/images/muel.jpg" alt="Screenshot MUEL App"
                             class="img-fluid rounded-2xl shadow-2xl border border-gray-700 hover:scale-[1.02] transition-transform duration-500 w-100 object-cover"
                             style="max-height: 500px;">
                     </div>
@@ -139,7 +139,7 @@
                     <div class="col-lg-10 text-center">
                         <h2 class="text-3xl font-bold mb-5 text-white">Fitur Utama</h2>
 
-                        <!-- Bootstrap Grid for Features -->
+                        <!-- Features -->
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
                                 <div
@@ -186,17 +186,17 @@
 
     <footer class="bg-darkSecondary border-t border-gray-700 py-6 text-center text-gray-400">
         <div class="container">
-            <p class="mb-0">Halaman Detail Proyek untuk Tugas Web &copy; 2026</p>
+            <p class="mb-0">OSM.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS & Custom Script (Untuk Intersection Observer di halaman detail) -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Animasi Scroll (Re-used for Detail Page)
+            // Animasi Scroll
             const sections = document.querySelectorAll('.content-section');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {

@@ -1,17 +1,14 @@
-/* ===== CUSTOM CSS (Hanya untuk animasi dan gaya yang spesifik) ===== */
+/* Custom CSS Utilities */
 :root {
     --primary-color-start: #3B82F6;
-    /* Gradien awal (biru) */
     --primary-color-end: #8B5CF6;
-    /* Gradien akhir (ungu) */
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* ===== FIX BOOTSTRAP VS TAILWIND CONFLICT ===== */
-/* Tailwind's .collapse utility overrides Bootstrap's .collapse behavior */
+/* Fix Bootstrap vs Tailwind Navbar Conflict */
 .collapse.navbar-collapse {
     visibility: visible !important;
 }
@@ -42,7 +39,6 @@ html {
     display: block;
     list-style: none;
     background: rgba(59, 130, 246, 0.15);
-    /* Samar-samar warna primary */
     border-radius: 50%;
     border: 1px solid rgba(139, 92, 246, 0.2);
     animation: moveOrbs 25s linear infinite;
